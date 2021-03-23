@@ -43,7 +43,7 @@ void hotel::main_menu()
 {
 
 int choice;
-while(choice!=5)
+while(choice!=6)
 {
 
   system("cls");
@@ -102,14 +102,14 @@ main_menu();
 void hotel::add()
 {
 
-  system("cls");
+ system("cls");
 int r,flag;
 char choice[10];
 ofstream fout("Record.dat",ios::app);
 
 cout<<"\n Enter Customer Detalis";
 cout<<"\n ----------------------";
-cout<<"\n\n Room no: ";
+cout<<"\n\n";
 cout<<"\n Total no. of Rooms - 100";
 cout<<"\n Ordinary Rooms from 1 - 50";
 cout<<"\n Deluxe Rooms from 51 - 85";
@@ -120,7 +120,7 @@ cin>>r;
 flag=check(r);
 
 if(flag)
-cout<<"\n Sorry..!!!Room is already booked";
+cout<<"\n Sorry.!!!Room is already booked";
 
 else
 {
